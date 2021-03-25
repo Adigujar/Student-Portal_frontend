@@ -57,7 +57,7 @@ const DeleteMessage = () => {
               gitlink: Link
           }),
         })
-         let res= await  res.json()
+         let res= await  send.json()
           console.log(res)
           history.go(0)
       };
