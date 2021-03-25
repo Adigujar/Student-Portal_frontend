@@ -58,7 +58,7 @@ const DeleteMessage = () => {
         })
           .then((res) => res.json())
           .then((data) => {
-            setData(data)
+            console.log(data)
             
           });
           history.go(0)
