@@ -1,0 +1,40 @@
+.aline{
+    position: relative;
+    left: 120px;
+    top: 10px;
+    
+}
+
+.text-box{
+    height: 30px;
+    width: 300px;
+}
+
+.pad1{
+    position: relative;
+    left: 50px;
+    right: 150px;
+}
+.pad2{
+    position: relative;
+    left: 12px;
+}
+
+.bg11{
+    background-color: cyan;
+}
+.bg2{
+    background-color: rgb(41, 236, 99);
+}
+
+.bg3{
+    background-color:red;
+}
+
+.bg4{
+    background-color: rgb(247, 250, 64);
+}
+
+.bg5{
+    background-color: red;
+}
