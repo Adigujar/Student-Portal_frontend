@@ -39,7 +39,7 @@ const DeleteMessage = () => {
         }
     useEffect(() => {
         getAssign();
-      }, []);
+      });
     const submitAssign = () => {
         console.log(Data.length)
         let ID =Data.length  + 1
