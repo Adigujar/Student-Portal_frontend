@@ -41,8 +41,6 @@ const DeleteMessage = () => {
         getAssign();
       });
     const submitAssign = async() => {
-      console.log("done")
-        console.log(Data.length)
         let ID =Data.length  + 1
        let send= await fetch(`https://students-portal-react.herokuapp.com/send`, {
           method: 'POST',
