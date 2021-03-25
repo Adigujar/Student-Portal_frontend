@@ -40,10 +40,11 @@ const DeleteMessage = () => {
     useEffect(() => {
         getAssign();
       });
-    const submitAssign = () => {
+    const submitAssign = async() => {
+      console.log("done")
         console.log(Data.length)
         let ID =Data.length  + 1
-        fetch(`https://students-portal-react.herokuapp.com/send`, {
+       let send= await fetch(`https://students-portal-react.herokuapp.com/send`, {
           method: 'POST',
           headers: {
             Accept: 'application/json',
@@ -56,11 +57,8 @@ const DeleteMessage = () => {
               gitlink: Link
           }),
         })
-          .then((res) => res.json())
-          .then((data) => {
-            console.log(data)
-            
-          });
+         let res= await  res.json()
+          console.log(res)
           history.go(0)
       };
 
